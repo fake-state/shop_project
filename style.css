@@ -160,7 +160,7 @@ body {
 }
 
 .product__item {
-  max-width: 360px;
+  max-width: 340px;
   background-color: #f8f8f8;
   margin-bottom: 30px;
   padding-bottom: 20px;
@@ -206,7 +206,7 @@ body {
 /* Преимущества */
 .advantages {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   background-color: #222224;
@@ -318,4 +318,17 @@ button[type="submit"] {
   font-weight: 400;
   font-size: 16px;
   color: #fbfbfb;
+}
+
+/* МЕДИА ЗАПРОСЫ */
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .product__item {
+    max-width: 300px;
+  }
 }
