@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 .center {
@@ -119,4 +125,197 @@
   font-weight: 700;
   font-size: 24px;
   color: #f16d7f;
+}
+
+/* Товары */
+.products {
+  padding-top: 96px;
+  padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__title {
+  text-align: center;
+}
+
+.products__title h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #222;
+}
+
+.products__title p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9f9f9f;
+}
+
+.products__items {
+  padding-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__item {
+  max-width: 360px;
+  background-color: #f8f8f8;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.product__item img {
+  max-width: 100%;
+  padding-bottom: 25px;
+}
+
+.product__name {
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+  padding-bottom: 13px;
+}
+
+.product__description {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+  padding-bottom: 18px;
+}
+
+.product__price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
+}
+
+.products__button {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f16d7f;
+  width: 212px;
+  height: 48px;
+  align-items: center;
+}
+
+/* Преимущества */
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222224;
+  min-height: 340px;
+}
+
+.advantages__item {
+  max-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item img {
+  padding-bottom: 28px;
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 19px;
+  color: #fbfbfb;
+}
+
+.advantages__description {
+  padding-top: 16px;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+/* Подписка */
+
+.subscription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 97px;
+  padding-bottom: 120px;
+  background-image: url(/img/bg_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscription__quote {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.subscription__quote p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222224;
+}
+
+.subscription__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  text-align: center;
+  color: #222224;
+}
+
+.subscription__description {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.subscription__form {
+  padding-top: 32px;
+}
+
+input[type="email"] {
+  width: 256px;
+  height: 49px;
+  background-color: #f8f8f8;
+  border: none;
+  padding-left: 20px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+button[type="submit"] {
+  width: 100px;
+  height: 49px;
+  background-color: #f16d7f;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* Футер */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222224;
+  min-height: 79px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
 }
