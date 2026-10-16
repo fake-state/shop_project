@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 571px);
+  padding-right: calc(50% - 571px);
+}
+
+/* Хэдэр */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  min-height: 75px;
+}
+
+.header__logo {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header__menu {
+  display: flex;
+  gap: 33px;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* Главный экран */
+.main {
+  background-color: #f1e4e6;
+}
+
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 1040px;
+}
+
+.main__info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main__photo img {
+  max-width: 100%;
+}
+
+.the_brand {
+  font-weight: 900;
+  font-size: 48px;
+  color: #222;
+}
+
+.of_luxerious {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.fashion {
+  font-weight: 700;
+  font-size: 32px;
+  color: #f16d7f;
+}
+
+/* Разделы каталога */
+
+.catalog {
+  padding-top: 65px;
+}
+
+.catalog__wear {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.catalog__wear img {
+  max-width: 100%;
+}
+
+.catalog__accessories {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.catalog__accessories img {
+  max-width: 100%;
+}
+
+.catalog__wear article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog__text {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.catalog__text span {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f16d7f;
+}
