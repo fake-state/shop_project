@@ -1,3 +1,5 @@
+@import "vars";
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -18,7 +20,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #222222;
+  background-color: $bgColor;
   min-height: 75px;
 
   &__logo {
@@ -73,12 +75,11 @@ body {
   & .fashion {
     font-weight: 700;
     font-size: 32px;
-    color: #f16d7f;
+    color: $mainColor;
   }
 }
 
 /* Разделы каталога */
-
 .catalog {
   padding-top: 65px;
 
@@ -123,7 +124,7 @@ body {
   &__text span {
     font-weight: 700;
     font-size: 24px;
-    color: #f16d7f;
+    color: $mainColor;
   }
 }
 
@@ -175,6 +176,7 @@ body {
     font-size: 13px;
     color: #000;
     padding-bottom: 13px;
+    padding-left: 8px;
   }
 
   &__description {
@@ -182,21 +184,23 @@ body {
     font-size: 14px;
     color: #5d5d5d;
     padding-bottom: 18px;
+    padding-left: 8px;
   }
 
   &__price {
     font-weight: 400;
     font-size: 16px;
-    color: #f16d7f;
+    color: $mainColor;
+    padding-left: 8px;
   }
 
-  &_button {
+  &__button {
     display: flex;
     justify-content: center;
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    background-color: #f16d7f;
+    background-color: $mainColor;
     width: 212px;
     height: 48px;
     align-items: center;
@@ -209,7 +213,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #222224;
+  background-color: $bgColor;
   min-height: 340px;
 
   &__item {
@@ -240,7 +244,6 @@ body {
 }
 
 /* Подписка */
-
 .subscription {
   display: flex;
   flex-wrap: wrap;
@@ -310,7 +313,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222224;
+  background-color: $bgColor;
   min-height: 79px;
 
   & p {
@@ -328,7 +331,47 @@ body {
     padding-right: 40px;
   }
 
-  .product__item {
-    max-width: 300px;
+  .products {
+    &__item {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    & img {
+      max-height: 368px;
+    }
+
+    & .the_brand {
+      font-size: 44px;
+    }
+
+    & .of_luxerious {
+      font-size: 24px;
+    }
+
+    & .fashion {
+      font-size: 24px;
+    }
+  }
+
+  .products {
+    &__item {
+      max-width: 340px;
+    }
+  }
+
+  .advantages {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 48px;
+  }
+
+  .subscription {
+    flex-direction: column;
+    gap: 48px;
   }
 }

@@ -153,19 +153,22 @@ body {
   font-size: 13px;
   color: #000;
   padding-bottom: 13px;
+  padding-left: 8px;
 }
 .products__description {
   font-weight: 300;
   font-size: 14px;
   color: #5d5d5d;
   padding-bottom: 18px;
+  padding-left: 8px;
 }
 .products__price {
   font-weight: 400;
   font-size: 16px;
   color: #f16d7f;
+  padding-left: 8px;
 }
-.products_button {
+.products__button {
   display: flex;
   justify-content: center;
   font-weight: 400;
@@ -183,7 +186,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #222224;
+  background-color: #222222;
   min-height: 340px;
 }
 .advantages__item {
@@ -272,7 +275,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222224;
+  background-color: #222222;
   min-height: 79px;
 }
 .footer p {
@@ -287,7 +290,34 @@ body {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .product__item {
+  .products__item {
     max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .main img {
+    max-height: 368px;
+  }
+  .main .the_brand {
+    font-size: 44px;
+  }
+  .main .of_luxerious {
+    font-size: 24px;
+  }
+  .main .fashion {
+    font-size: 24px;
+  }
+  .products__item {
+    max-width: 340px;
+  }
+  .advantages {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    gap: 48px;
+  }
+  .subscription {
+    flex-direction: column;
+    gap: 48px;
   }
 }/*# sourceMappingURL=style.css.map */
