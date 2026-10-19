@@ -1,0 +1,277 @@
+@import "vars";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.center {
+  padding-left: calc(50% - 571px);
+  padding-right: calc(50% - 571px);
+}
+
+// Хэдэр
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $bgColor;
+  min-height: 75px;
+
+  &__logo {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 33px;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+// Хлебные крошки
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f3f4;
+  min-height: 148px;
+
+  & h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: $mainColor;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  & a {
+    font-weight: 300;
+    font-size: 14px;
+    color: #636363;
+  }
+
+  & a::after {
+    content: " /";
+  }
+
+  & .active {
+    color: $mainColor;
+  }
+}
+
+/* Товары */
+.products {
+  padding-top: 96px;
+  padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__title h2 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+  }
+
+  &__title p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+  }
+
+  &__items {
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 340px;
+    background-color: #f8f8f8;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  &__item img {
+    max-width: 100%;
+    padding-bottom: 25px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    padding-bottom: 13px;
+    padding-left: 8px;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 14px;
+    color: #5d5d5d;
+    padding-bottom: 18px;
+    padding-left: 8px;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 16px;
+    color: $mainColor;
+    padding-left: 8px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background-color: $mainColor;
+    width: 212px;
+    height: 48px;
+    align-items: center;
+  }
+}
+
+/* Преимущества */
+.advantages {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $bgColor;
+  min-height: 340px;
+
+  &__item {
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item img {
+    padding-bottom: 28px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 19px;
+    color: #fbfbfb;
+  }
+
+  &__description {
+    padding-top: 16px;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    color: #fbfbfb;
+  }
+}
+
+/* Подписка */
+.subscription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 97px;
+  padding-bottom: 120px;
+  background-image: url(/img/bg_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__quote {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__quote p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #222224;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    text-align: center;
+    color: #222224;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__form {
+    padding-top: 32px;
+  }
+
+  & input[type="email"] {
+    width: 256px;
+    height: 49px;
+    background-color: #f8f8f8;
+    border: none;
+    padding-left: 20px;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  & button[type="submit"] {
+    width: 100px;
+    height: 49px;
+    background-color: #f16d7f;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 0px 20px 20px 0px;
+  }
+}
+
+/* Футер */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bgColor;
+  min-height: 79px;
+
+  & p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fbfbfb;
+  }
+}
