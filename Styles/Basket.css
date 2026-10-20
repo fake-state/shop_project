@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 571px);
+  padding-right: calc(50% - 571px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  min-height: 75px;
+}
+.header__logo {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.header__menu {
+  display: flex;
+  gap: 33px;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f3f4;
+  min-height: 148px;
+}
+.breadcrumbs h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #f16d7f;
+}
+
+.basket {
+  padding-top: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.basket__items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.basket__item {
+  width: 652px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.12);
+}
+.basket__item .cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.basket__item_info {
+  padding-top: 26px;
+}
+.basket__item_info h2 {
+  padding-bottom: 42px;
+}
+.basket__item_info p:not(:last-child) {
+  padding-bottom: 6px;
+}
+.basket__item_info p {
+  font-weight: 400;
+  font-size: 22px;
+  color: #575757;
+}
+.basket__item_info p span {
+  color: #575757;
+}
+.basket__item_info .price span {
+  font-weight: 400;
+  font-size: 22px;
+  color: #f16d7f;
+}
+.basket__item_info input {
+  width: 44px;
+}
+.basket__adress p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #222;
+}
+.basket__adress input {
+  width: 360px;
+  height: 45px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.basket__adress button {
+  margin-top: 23px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #4a4a4a;
+  padding: 10px 15px;
+}
+.basket__adress {
+  display: flex;
+  flex-direction: column;
+}
+.basket__shop {
+  background-color: #f5f3f3;
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 45px;
+}
+.basket__shop span {
+  margin-left: 20px;
+}
+.basket__shop_global span {
+  font-weight: 700;
+  color: #f16d7f;
+}
+.basket__shop button {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f16d7f;
+}
+.basket__shop_total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+/* Подписка */
+.subscription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 97px;
+  padding-bottom: 120px;
+  background-image: url(/img/bg_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subscription__quote {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.subscription__quote p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222224;
+}
+.subscription__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  text-align: center;
+  color: #222224;
+}
+.subscription__description {
+  font-weight: 400;
+  font-size: 18px;
+}
+.subscription__form {
+  padding-top: 32px;
+}
+.subscription input[type=email] {
+  width: 256px;
+  height: 49px;
+  background-color: #f8f8f8;
+  border: none;
+  padding-left: 20px;
+  border-radius: 20px 0px 0px 20px;
+}
+.subscription button[type=submit] {
+  width: 100px;
+  height: 49px;
+  background-color: #f16d7f;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* Футер */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  min-height: 79px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
+}/*# sourceMappingURL=Basket.css.map */
